@@ -1,5 +1,4 @@
-new Date(featuredPost.date).toLocaleDateString  new Date(featuredPost.date || new Date()).toLocaleDateStringimport Link from 'next/link';
-import { getAllPosts } from '../lib/posts';
+import Link from 'next/link';import { getAllPosts } from '../lib/posts';
 import styles from '../styles/Home.module.css';
 
 const Home = ({ posts }) => {
