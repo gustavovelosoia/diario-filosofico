@@ -2,7 +2,7 @@
 title: "Empirismo vs Racionalismo: Dois Caminhos para a Verdade"
 date: 2025-11-25
 currentPhilosophers: "Descartes, Locke, Hume, Leibniz, Spinoza"
-poetecIntro: false
+poeticIntro: false
 ---
 
 # Empirismo vs Racionalismo: Dois Caminhos para a Verdade
