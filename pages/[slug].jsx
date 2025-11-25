@@ -1,5 +1,5 @@
-import { getPostBySlug, getAllPosts } from '../../lib/posts';
-import styles from '../../styles/Post.module.css';
+import { getPostBySlug, getAllPosts } from ../lib/posts';
+import styles from ../styles/Post.module.css';
 import Link from 'next/link';
 
 const Post = ({ post }) => {
