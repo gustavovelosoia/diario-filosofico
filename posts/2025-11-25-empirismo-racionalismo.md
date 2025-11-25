@@ -2,7 +2,7 @@
 title: "Empirismo vs Racionalismo: Dois Caminhos para a Verdade"
 date: "2025-11-25"
 currentPhilosophers: "Descartes, Locke, Hume, Leibniz, Spinoza"
-poetecIntro: |
+poeticIntro: |
   Na quietude azul do amanhecer, entre fileiras de livros empoeir ados e vitrais manchados de tempo, paira uma luz que hesita entre o raciocínio frio e o toque cálido da experiência. Dois caminhos ancestrais se abrem diante da mente que busca: um ascende pelas torres da razão pura; o outro desce pelos vales dos sentidos. Que jornada escolher?
 philosophicalCurrent: |
   **O Debate Fundamental**
