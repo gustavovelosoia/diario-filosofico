@@ -1,0 +1,248 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+  color: #d4af8f;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(212, 175, 143, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #e8d9c9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #b8956e;
+  margin: 2rem 0;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af8f, transparent);
+  margin: 2rem auto;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #a08968;
+  margin: 2rem 0 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.featured {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(212, 175, 143, 0.2);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: #d4af8f;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background: #d4af8f;
+}
+
+.featuredPost {
+  background: rgba(212, 175, 143, 0.05);
+  padding: 2rem;
+  border-left: 3px solid #d4af8f;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.featuredPost:hover {
+  background: rgba(212, 175, 143, 0.1);
+  transform: translateX(5px);
+}
+
+.postLink {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.postTitle {
+  font-size: 2rem;
+  color: #e8d9c9;
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.postDate {
+  color: #a08968;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+}
+
+.postExcerpt {
+  color: #c9b5a0;
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.readMore {
+  color: #d4af8f;
+  text-decoration: none;
+  border-bottom: 1px solid #d4af8f;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.readMore:hover {
+  color: #e8d9c9;
+  border-bottom-color: #e8d9c9;
+}
+
+.allPosts {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.postCard {
+  background: rgba(212, 175, 143, 0.05);
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 175, 143, 0.2);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.postCard:hover {
+  background: rgba(212, 175, 143, 0.1);
+  border-color: rgba(212, 175, 143, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.postCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  color: #e8d9c9;
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.cardDate {
+  color: #a08968;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.cardThinkers {
+  color: #b8956e;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.footer {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 2px solid rgba(212, 175, 143, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footerText {
+  font-size: 1.3rem;
+  color: #d4af8f;
+  margin: 0 0 1.5rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.footerSmall {
+  font-size: 0.9rem;
+  color: #8b7e6b;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .postTitle {
+    font-size: 1.5rem;
+  }
+
+  .postsGrid {
+    grid-template-columns: 1fr;
+  }
+}
