@@ -54,8 +54,7 @@ export default function Post({ post }) {
           {/* Markdown Content */}
           <div 
             className={styles.content}
-            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-          />
+dangerouslySetInnerHTML={{ __html: post.contentHtml.replace(/<h1>.*?<\/h1>/s, '') }}          />
         </article>
 
         {/* Footer */}
