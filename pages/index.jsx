@@ -1,4 +1,4 @@
-import Link from 'next/link';
+new Date(featuredPost.date).toLocaleDateString  new Date(featuredPost.date || new Date()).toLocaleDateStringimport Link from 'next/link';
 import { getAllPosts } from '../lib/posts';
 import styles from '../styles/Home.module.css';
 
@@ -31,7 +31,7 @@ const Home = ({ posts }) => {
               <a className={styles.postLink}>
                 <h3 className={styles.postTitle}>{featuredPost.title}</h3>
                 <p className={styles.postDate}>
-                  {new Date(featuredPost.date).toLocaleDateString('pt-BR', {
+                              {new Date(featuredPost.date || new Date()).toLocaleDateString('pt-BR', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
@@ -56,7 +56,7 @@ const Home = ({ posts }) => {
                   <a className={styles.postCardLink}>
                     <h4 className={styles.cardTitle}>{post.title}</h4>
                     <p className={styles.cardDate}>
-                      {new Date(post.date).toLocaleDateString('pt-BR', {
+                                  {new Date(post.date || new Date()).toLocaleDateString('pt-BR', {
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric'
