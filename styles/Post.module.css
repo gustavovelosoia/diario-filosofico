@@ -1,0 +1,253 @@
+.article {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+  color: #d4af8f;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.5px;
+  padding: 3rem 2rem;
+}
+
+.header {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  border-bottom: 2px solid rgba(212, 175, 143, 0.3);
+  padding-bottom: 2rem;
+}
+
+.headerContent {
+  text-align: center;
+}
+
+.date {
+  color: #a08968;
+  font-style: italic;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #e8d9c9;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+
+.philosophers {
+  margin-top: 1.5rem;
+}
+
+.philosophersText {
+  color: #b8956e;
+  font-style: italic;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af8f, transparent);
+  margin: 2rem auto;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  color: #d4af8f;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background: #d4af8f;
+}
+
+.sectionContent {
+  color: #c9b5a0;
+  line-height: 1.9;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.sectionContent p {
+  margin-bottom: 1.2rem;
+}
+
+.sectionContent ul,
+.sectionContent ol {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.sectionContent li {
+  margin-bottom: 0.8rem;
+}
+
+.quotation {
+  background: rgba(212, 175, 143, 0.08);
+  border-left: 4px solid #d4af8f;
+  padding: 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.quote {
+  color: #d4af8f;
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.quoteFooter {
+  color: #a08968;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.figure {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(212, 175, 143, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.figcaption {
+  color: #a08968;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.notesPrompt {
+  color: #b8956e;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.notesArea {
+  min-height: 200px;
+  background: rgba(212, 175, 143, 0.03);
+  border: 1px dashed rgba(212, 175, 143, 0.2);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.closing {
+  background: rgba(212, 175, 143, 0.05);
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.closingText {
+  color: #d4af8f;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.sources {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212, 175, 143, 0.2);
+}
+
+.sourcesTitle {
+  font-size: 1.2rem;
+  color: #d4af8f;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linksList li {
+  margin-bottom: 0.8rem;
+}
+
+.linksList a {
+  color: #b8956e;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 149, 110, 0.5);
+  transition: all 0.3s ease;
+}
+
+.linksList a:hover {
+  color: #d4af8f;
+  border-bottom-color: #d4af8f;
+}
+
+.postFooter {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212, 175, 143, 0.2);
+}
+
+.backLink {
+  color: #d4af8f;
+  text-decoration: none;
+  border-bottom: 1px solid #d4af8f;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.backLink:hover {
+  color: #e8d9c9;
+  border-bottom-color: #e8d9c9;
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionContent {
+    font-size: 1rem;
+  }
+
+  .quotation {
+    padding: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+}
