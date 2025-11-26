@@ -56,7 +56,7 @@ export default function Post({ post }) {
           <div 
             className={styles.content}
 dangerouslySetInnerHTML={{ __html: post.contentHtml}}        
-        </article>
+    />        </article>
 
         {/* Footer */}
         <footer className={styles.footer}>
