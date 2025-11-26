@@ -1,4 +1,5 @@
-import { getPostBySlug, getAllPosts } from '../../lib/posts';
+57
+  import { getPostBySlug, getAllPosts } from '../../lib/posts';
 import styles from '../../styles/Post.module.css';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -54,7 +55,7 @@ export default function Post({ post }) {
           {/* Markdown Content */}
           <div 
             className={styles.content}
-dangerouslySetInnerHTML={{ __html: post.contentHtml. }}        
+dangerouslySetInnerHTML={{ __html: post.contentHtml}}        
         </article>
 
         {/* Footer */}
