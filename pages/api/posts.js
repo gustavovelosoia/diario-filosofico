@@ -6,12 +6,6 @@ const postsDir = path.join(process.cwd(), 'posts');
 
 export default async function handler(req, res) {
   // Autenticação básica (senha no header)
-  const authHeader = req.headers.authorization;
-  const validPassword = process.env.ADMIN_PASSWORD || 'filosof1a2025';
-  
-  if (!authHeader || authHeader !== `Bearer ${validPassword}`) {
-    return res.status(401).json({ error: 'Não autorizado' });
-  }
 
   if (req.method === 'GET') {
     // Listar todas as reflexões
